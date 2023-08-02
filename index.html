@@ -14,15 +14,19 @@
         </section>
         <section class="login">
             <h2>Login</h2>
-            <form action="#">
-                <p>
-                    <input type="email" class="campos" placeholder="email " name="email" id="email"     required>
-                </p>
-                <p>
+            <form action="#" autocomplete="on">
+                <div class="inputIcon">
+                    <label for="email"><span class="material-icons" class="icon">person</span></label>
+                    <input type="email" class="campos" placeholder="email " name="email" id="email"   required >
+                </div>
+                <div class="inputIcon">
+                    <label for="senha"><span class="material-icons" class="icon">lock_open</span></label>
                     <input type="password" name="senha" id="senha" placeholder="senha" required maxlength="8" class="campos">
-                </p>
+                </div>
                 <p>
-                    <input type="submit" value="Entrar" class="Entrar">
+                    <a href="#">Esqueci a senha</a>
+                    <br>
+                    <input type="submit" value="Entrar" class="btn">
                 </p>
             </form>
         </section>
