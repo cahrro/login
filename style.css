@@ -21,7 +21,7 @@
 
 body{
     height: 100vh;
-    background: var(--azulmedio);
+    background-image: radial-gradient(circle, #8aabbf, #80a2b9, #7799b2, #6e91ac, #6588a6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--azulescuro);
+    background: var(--azulescuro) url(imgs/pexels-may-barros-1260841.jpg) bottom center / cover no-repeat ;
+    text-shadow: 2px 3px var(--azulescuro);
     border-radius: 10px 0px 0px ;
     color: white;
     font-size: 2em;
@@ -128,5 +129,18 @@ a:hover{
     color: var(--azulescuro);
     font-weight: bold;
     letter-spacing: 1px;
-    transition: .4s;
+    transition: .2s ease-out;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        min-width: 700px;
+        display: flex;
+    }
+
+    .bemvindo{
+        height: 100%;
+        background: url(imgs/pexels-may-barros-1260841.jpg) center bottom / cover  no-repeat;
+    }
+
 }
